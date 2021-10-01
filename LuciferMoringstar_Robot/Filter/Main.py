@@ -115,7 +115,7 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ Title:** </code>{search}<code>\n**⭐ Rating:** </b>{random.choice(RATING)}<b>\n**🎭 Genre:** </b>{random.choice(GENRES)}<b>\n\n**👮‍♂ ɴᴏᴛɪᴄᴇ :** </code>If you don't see the files of the movie you asked for look at next page<code>"
+        mo_tech_yt = f"**🗂️ MOVIE NAME:** <code>{search}\n**⭐ RATING:** <code>{random.choice(RATING)}\n**🎭 GENRE:** <code>{random.choice(GENRES)}\n\n**👮‍♂ ɴᴏᴛɪᴄᴇ :** <code>If you don't see the files of the movie you asked for look at next page"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
@@ -125,7 +125,7 @@ async def group(client, message):
         if files:
             for file in files:
                 file_id = file.file_id
-                filename = f"[{get_size(file.file_size)}]- 🎬 {file.file_name}"
+                filename = f"[{get_size(file.file_size)}] - 🎬 {file.file_name}"
                 btn.append(
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
                 )
