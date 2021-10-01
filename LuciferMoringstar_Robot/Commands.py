@@ -119,7 +119,7 @@ async def start(bot, message):
             reply_markup=InlineKeyboardMarkup(
                 [[
                 InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                InlineKeyboardButton("MOVIE GROUP", url="https://t.me/CinemaPedikaGroup")
+                InlineKeyboardButton("Share", url="https://t.me/share/url?url=%20https://t.me/CinemaPedikaGroup")
                 ],[
                 InlineKeyboardButton("Help", callback_data="help"),
                 InlineKeyboardButton("About", callback_data="about")
