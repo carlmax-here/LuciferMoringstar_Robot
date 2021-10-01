@@ -115,7 +115,7 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ MOVIE NAME:** <code>{search}\n**⭐ RATING:** <code>{random.choice(RATING)}\n**🎭 GENRE:** <code>{random.choice(GENRES)}\n\n**👮‍♂ ɴᴏᴛɪᴄᴇ :** <code>If you don't see the files of the movie you asked for look at next page"
+        mo_tech_yt = f"**🗂️ MOVIE NAME:** <code>{search}</code>\n**⭐ RATING:** <code>{random.choice(RATING)}</code>\n**🎭 GENRE:** <code>{random.choice(GENRES)}</code>\n\n**👮‍♂ ɴᴏᴛɪᴄᴇ :** <code>If you don't see the files of the movie you asked for look at next page.</code>"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
